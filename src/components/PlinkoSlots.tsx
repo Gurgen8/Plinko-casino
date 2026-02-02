@@ -9,7 +9,7 @@ interface Props {
 export const PlinkoSlots: React.FC<Props> = ({ lastHitIndex }) => {
     // We use the multipliers for the configured row count
     const multipliers = MULTIPLIERS[ROWS];
-    const spacing = BOARD_WIDTH / (ROWS + 1);
+    const spacing = BOARD_WIDTH / (ROWS + 2);
 
     // Physics Logic Replication:
     // lastRowPins = ROWS + 3 = 19

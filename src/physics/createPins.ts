@@ -4,7 +4,7 @@ import type { CustomBody } from '../types/physics';
 
 export const createPins = (rows: number, width: number) => {
     const pins: Matter.Body[] = [];
-    const spacing = width / (rows + 1);
+    const spacing = width / (rows + 2);
     const startY = 50;
 
     for (let r = 0; r < rows; r++) {
