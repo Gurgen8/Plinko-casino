@@ -1,5 +1,5 @@
 export const BOARD_WIDTH = 800;
-export const BOARD_HEIGHT = 900;
+export const BOARD_HEIGHT = 1200;
 
 export const PIN_RADIUS = 5;
 export const PIN_SIZE = 5;

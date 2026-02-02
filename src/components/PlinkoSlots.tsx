@@ -18,7 +18,7 @@ export const PlinkoSlots: React.FC<Props> = ({ lastHitIndex }) => {
     // CreateSlots loop: x = startX + i * spacing + spacing/2
     // So visualization should start at startX.
 
-    const lastRowPins = ROWS + 3;
+    const lastRowPins = ROWS + 2;
     const lastRowWidth = (lastRowPins - 1) * spacing;
     const startX = (BOARD_WIDTH - lastRowWidth) / 2;
     const startY = 50 + ROWS * spacing; // Base Y position from physics
@@ -41,7 +41,8 @@ export const PlinkoSlots: React.FC<Props> = ({ lastHitIndex }) => {
         >
             <div className="slots-row" style={{ display: 'flex', width: '100%' }}>
                 {multipliers.map((mult, index) => (
-                    <div key={index} style={{ width: spacing, height: '60px', padding: '0 2px' }}>
+                    // Add padding to create gap between slots, simulating walls visibility
+                    <div key={index} style={{ width: spacing, height: '40px', padding: '0 4px', marginTop: '20px' }}>
                         <PlinkoSlot
                             multiplier={mult}
                             active={lastHitIndex === index}

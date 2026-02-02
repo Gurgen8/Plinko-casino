@@ -16,7 +16,7 @@ export const createSlots = (rows: number, spacing: number, width: number) => {
     // Last row width (pin center to pin center): (18-1) * spacing = 17 * spacing.
     // startX of last row: (width - 17*spacing)/2.
 
-    const lastRowPins = rows + 3; // For row index = rows - 1 ??? No. Row index 0 has 3 pins. Row index 15 has 18 pins.
+    const lastRowPins = rows + 2;
     // Correct.
 
     const lastRowWidth = (lastRowPins - 1) * spacing;
